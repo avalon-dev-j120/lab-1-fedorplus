@@ -50,6 +50,7 @@ public class Person {
     }
     
     public boolean equals(Person obj){
+        if (obj == null) return false;
         return toString().equals(obj.toString());
     }
     

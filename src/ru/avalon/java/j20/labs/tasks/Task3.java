@@ -16,11 +16,15 @@ public class Task3 implements Task {
     @Override
     public void run() {
         Fibonacci a = new Fibonacci(20);
-        Iterator<Integer> b = a.iterator();
+        /*Iterator<Integer> b = a.iterator();
         Integer sum = 0;
         while (b.hasNext()) {
             sum = sum + b.next();
 
+        }*/
+        int sum = 0;
+        for (Integer i :a){
+            sum += i;
         }
 
         /*
